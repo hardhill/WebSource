@@ -35,6 +35,8 @@ namespace WebSource
             elem.InnerText = $"{DateTime.Now}";
             string tmpr = mainElement.InnerHtml;
             mainElement.InnerHtml = $"<div>{DateTime.Now}</div>" + tmpr;
+            Genstr gen = new Genstr("");
+
         }
 
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
