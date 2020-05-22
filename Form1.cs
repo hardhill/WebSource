@@ -29,7 +29,7 @@ namespace WebSource
 
         private void button1_Click(object sender, EventArgs e)
         {
-            webBrowser1.Document.InvokeScript("Info",new String[] {"yellow"});
+            webBrowser1.Document.InvokeScript("Info",new String[] {"green"});
             HtmlElement elem;
             elem = webBrowser1.Document.CreateElement("div");
             elem.InnerText = $"{DateTime.Now}";
